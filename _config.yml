@@ -21,12 +21,12 @@ permalink: /:categories/:title
 excerpt_separator: "[-----]"
 
 url: # Required: replace this with your domain
-name: textalic # Required: will be displayed on every page's header
-title: site title # Required: site's default title
+name: metaheads # Required: will be displayed on every page's header
+title: metaheads blog # Required: site's default title
 shout: # Required: **TWO** lines, will be displayed on page's header.
   - one liner one...
   - one liner two...
-description: "Some short description on your site" # Required
+description: "metaheads blog" # Required
 
 disqus:
   comments: false # Global toggle on/off disqus comment
