@@ -24,8 +24,8 @@ url: # Required: replace this with your domain
 name: metaheads # Required: will be displayed on every page's header
 title: metaheads blog # Required: site's default title
 shout: # Required: **TWO** lines, will be displayed on page's header.
-  - one liner one...
-  - one liner two...
+  - 
+  - 
 description: "metaheads blog" # Required
 
 disqus:
