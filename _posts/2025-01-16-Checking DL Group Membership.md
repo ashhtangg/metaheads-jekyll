@@ -1,5 +1,3 @@
-Certainly! Here's a brief blog post with a more generalized version of the script:
-
 ## Checking Distribution List Membership in Exchange Online: A PowerShell Solution
 
 As an IT administrator, you might often need to verify if certain users are members of a specific distribution list in Exchange Online. Here's a simple PowerShell script that can help you automate this process.
