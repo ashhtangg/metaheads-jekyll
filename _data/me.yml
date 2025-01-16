@@ -3,8 +3,8 @@
 
 name: "Ashley Tang"
 job: "IT Technician"
-hi: ""
-#avatar_img: "/assets/img/me.png" # path to your avatar
+hi: "..."
+avatar_img: "/assets/img/me.png" # path to your avatar
 intro:
   - "An IT Techician documenting their journey through tech as well as general life updates"
   - 
