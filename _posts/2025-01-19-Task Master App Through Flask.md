@@ -85,3 +85,50 @@ def index():
 
 You'll also have to add the 'return_template' function with your imports, and of course fill in your HTML file has desired. 
 
+### Template Inheritance Part 1 
+
+What this does is that it allows you to refer to one HTML file as the 'master file' so that you don't have to copy the same HTML template every time. Make sure to create a 'templates' folder and place your HTML files within here. 
+
+How this works is that you have to use blocks, the syntax for this is `{% block 'x' %} {% endblock %}`. The `{}` is a way to use python logic within HTMl or other files.
+
+This syntax is specifcally for template inheritance. 
+
+You want to place these blocks within your HTML where you would want works changed, for example the header, or the body of the HTML.
+
+### Template Inheritance Part 2
+
+After you done this, you want to create other HTML files and refer/extend back to the master. You do this  through `{% extends 'base.html' %}`
+
+You'll then refer back to the blocks within your base/master html, and change it like so
+
+```
+{% block head %}
+<h1>Example</h1>
+{% endblock %}
+```
+
+## Linking CSS 
+
+Since this is just bare HTML files, it'll look quite plain, so you would link your CSS file for styling.
+
+Create a folder named 'static' and place your 'main.css' within here. From there change your CSS file to how you see fit and you can link it through the below 
+
+For this example, I just removed margins and change the font that's used for the next on the body
+
+```
+body{
+    margin:0;
+    font-family: sans_serif;
+}
+```
+
+### Linking CSS in HTML file 
+
+You would link it through placing this in the head of your HTMl `<link rel="stylesheet" href="{{url_for('static', filename='css/main,css)}}}">`
+
+The `<link>` tag is used to link to external resource, in this case it refers to the CCS file, `rel="stylesheet"` specifies the relationship between the current document and the linked resource, for this example we used 'stylesheet' `href` refers to the location of the linked document 
+
+`{{url_for('static', filename='css/main.css')}}`: This is a server-side template expression, likely using Jinja2 templating language often used with Flask:
+url_for() is a Flask function that generates URLs
+'static' refers to the static folder in Flask's directory structure
+filename='css/main.css' specifies the path to the CSS file within the static folder
