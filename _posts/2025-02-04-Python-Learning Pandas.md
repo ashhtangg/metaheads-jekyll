@@ -1,13 +1,7 @@
-Your blog post is a good start, but here are some suggestions to improve it:
-
-### Improved Blog Post
-
 ---
 category: doc
 tags: [python, pandas]
 ---
-
-## Mastering the Basics of Pandas in Python
 
 ### Introduction
 
