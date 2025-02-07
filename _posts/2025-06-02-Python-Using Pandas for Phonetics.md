@@ -18,9 +18,8 @@ data = pandas.read_csv("nato_phonetic_alphabet.csv")
 new_dict = {row.letter: row.code for (index, row) in data.iterrows()}
 
 name = input("Please enter your name: ").upper()
-splitname = [letter for letter in name]
 
-phonetic = [new_dict[letter] for letter in splitname if letter in new_dict]
+phonetic = [new_dict[letter] for letter in name if letter in new_dict]
 print(phonetic)
 ```
 
@@ -32,9 +31,7 @@ After we get pandas to read the CSV that contains the phonetic data
 
 From there, we name a new dictionary (with dictionary comprehension and the .interrows() method)
 
-We then ask for a input from the user - make a new list (using list comprehension) with just the letters
-
-We then make a final list called phonetic - if the letter is in new_dict, for each letter in splitname, find the corresponding phonetic per letter
+We then make a final list called phonetic - if the letter is in new_dict, for each letter in name, find the corresponding phonetic per letter
 
 --
 
